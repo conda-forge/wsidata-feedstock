@@ -1,5 +1,5 @@
 {% set name = "wsidata" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wsidata-{{ version }}.tar.gz
-  sha256: 49c10c17314e651536dca87d309d54672e2c28fa55ae859d6e24c412364f218e
+  sha256: 733882195d51f422fe0ea3571f15fefcf45d6d35e9fa3bbe0ed0b058856c3948
   patches:
     - openslide.patch
 
