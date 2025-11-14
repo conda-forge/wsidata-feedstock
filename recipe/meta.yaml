@@ -30,6 +30,7 @@ requirements:
     - tiffslide
     - rich
     - pytorch >=2.0.0
+    - zarr <3.0,>=2.16.0
 
 test:
   imports:
