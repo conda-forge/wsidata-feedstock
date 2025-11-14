@@ -27,7 +27,7 @@ requirements:
     - spatialdata >=0.3.0
     - opencv
     - openslide-python >=1.4.1
-    - tiffslide
+    - tifffile <2025.5.21,>=2023.7.4
     - rich
     - pytorch >=2.0.0
     - zarr <3.0,>=2.16.0
