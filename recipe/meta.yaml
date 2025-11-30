@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - spatialdata >=0.3.0
+    - spatialdata >=0.6.0
     - opencv
     - openslide-python >=1.4.1
     - tifffile <2025.5.21,>=2023.7.4
