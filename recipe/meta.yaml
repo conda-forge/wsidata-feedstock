@@ -1,5 +1,5 @@
 {% set name = "wsidata" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wsidata-{{ version }}.tar.gz
-  sha256: 23af56eba82bdc4ba0538ab5ac1509753cc69df4206bcf93f38b35423113759a
+  sha256: a19db07f6974b8032d5a4643599ca7015175d537ef88a39031090a88aefe1e55
   patches:
     - openslide.patch
 
@@ -24,14 +24,12 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - spatialdata >=0.3.0
+    - spatialdata >=0.6.0
     - opencv
     - openslide-python >=1.4.1
-    - tifffile <2025.5.21,>=2023.7.4
     - rich
     - pytorch >=2.0.0
-    - zarr <3.0,>=2.16.0
-    - tiffslide <=2.4.0
+    - zarr >=3.0
 
 test:
   imports:
